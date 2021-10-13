@@ -1,0 +1,444 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    background:  conic-gradient(from 173.65deg at 49.37% 45.46%,
+    rgba(174, 170, 224, 0) -35.62deg, rgba(106, 60, 223, 0.81) 33.75deg,
+    rgba(192, 170, 224, 0.904299) 73.13deg, #C2AAE0 116.25deg,
+    rgba(51, 27, 201, 0.734583) 157.5deg, rgba(185, 170, 224, 0.559324) 230.62deg,
+    rgba(52, 28, 150, 0.760994) 286.87deg, rgba(174, 170, 224, 0) 324.38deg, rgba(106, 60, 223, 0.81) 393.75deg) no-repeat;
+
+}
+p{
+    font-family: Roboto;
+}
+h2{
+    font-family: Roboto;
+    font-size: 2.7vw;
+}
+a{
+    font-size: 0.93vw;
+    text-decoration: none
+}
+.header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #9D87DA;
+
+    padding: 0.625vw 7.1vw 0.625vw 4.47vw;
+}
+.header__wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 0.2vw;
+}
+.header__title{
+    font-size: 0.93vw;
+    width: 5vw;
+}
+.header__container-img{
+    width: 3vw;
+}
+.header__nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 22.83vw;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    padding:  .93vw 4vw 0.93vw 4vw;
+}
+.card{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 1.97vw;
+}
+.card__main{
+
+    margin-right: -15vw;
+    z-index: 100;
+
+    height: 12.9vw;
+
+    background: rgba(146, 114, 235, 0.68);
+    border-radius: 60px;
+
+    padding: 1.66vw 3vw 1.66vw 2.6vw;
+}
+.card__main__title{
+    width: 90%;
+    font-size: 1.25vw;
+    margin-bottom: 0.82vw;
+}
+.card__main__text{
+    font-size: 0.72vw;
+    margin-bottom: 1.87vw;
+}
+.card__main__but{
+    background: #621a33;
+    border-radius: 100px;
+
+    padding: 0.57vw 2.91vw 0.57vw 2.91vw;
+    border: none;
+
+    font-size: 0.72vw;
+    font-family: Roboto;
+    font-weight: 400;
+
+    cursor: pointer;
+
+}
+.card__main__but:hover{
+    background: #b62971;
+    transition: .2s;
+}
+.card__main__but:active{
+    background: rgba(182, 41, 113, 0.6);
+    transition: .2s;
+}
+.card__info{
+    position: relative;
+    margin-left: -36.4vw;
+    margin-top: 6vw;
+    width: 23.02vw;
+    height: 30.88vw;
+
+    border-radius: 60px;
+
+    padding: 2.44vw 7.81vw 4.42vw 4.42vw;
+}
+.card__info:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(122, 90, 225, 0.82);
+    filter: blur(40px);
+}
+.card__info__text{
+    position: relative;
+    font-size: 1.2vw;
+    font-weight: bold;
+}
+.card__info__i{
+    width: 33vw;
+    position: relative;
+    margin-top: -39.4vw;
+    left: 12vw;
+}
+.wrapper-food{
+    display: flex;
+    flex-direction: row;
+}
+.card-food{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: rgba(149, 121, 229, 0.31);
+    border-radius: 65px;
+
+    padding: 0.98vw 2.13vw 2.6vw 2.13vw;
+    margin-right: 2.2vw;
+}
+.title_food{
+    font-size: 0.83vw;
+    margin-bottom: 1.14vw;
+    margin-left: 10vw;
+}
+.info_food{
+    font-size: 0.72vw;
+    width: 18vw;
+    height: 10vh
+}
+.food_bt{
+    width: 11.56vw;
+}
+.contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60.72vw;
+    background: no-repeat center url("../img/contacts.png");
+    border-radius: 128px;
+    margin-top: 1.2vw;
+    padding: 0.83vw 10.15vw 10.15vw 10.15vw;
+}
+.contacts_about{
+    font-size: 1.25vw;
+    text-align: center;
+    width: 15vw;
+}
+.contacts_info{
+    font-size: 1.25vw;
+    width: 29.21vw;
+    text-align: center;
+}
+
+.width_img{
+    width: 60%;
+}
+
+
+@media (min-width: 361px) and (max-width: 768px) {
+    a{
+        font-size: 2.3vw;
+    }
+    h2{
+        font-size: 3.3vw;
+    }
+    .header__nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 2.3vw;
+        width: 26.83vw;
+    }
+    .header__container-img{
+        width: 8vw;
+    }
+    .header__title{
+        font-size: 2vw;
+        width: 5vw;
+    }
+    .phone_title{
+        font-size: 2.3vw;
+    }
+    .card{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .card__main{
+
+        margin-right: -15vw;
+        z-index: 100;
+
+        height: 20.9vw;
+
+        padding: 2.5vw 5vw 1.66vw 4vw;
+    }
+    .card__main__title{
+        font-size: 2.4vw;
+    }
+    .card__main__text{
+        font-size: 2vw;
+    }
+    .card__main__but{
+        background: #621a33;
+        border-radius: 100px;
+
+        padding: 0.57vw 2.91vw 0.57vw 2.91vw;
+        border: none;
+
+        font-size: 2vw;
+        font-family: Roboto;
+        font-weight: 400;
+
+        cursor: pointer;
+
+    }
+    .card__info{
+        position: relative;
+        margin-left: -45.4vw;
+        margin-top: 6vw;
+        width: 40.02vw;
+        height: 30.88vw;
+
+        border-radius: 60px;
+
+        padding: 2.44vw 7.81vw 4.42vw 4.42vw;
+    }
+    .card__info__text{
+        font-size: 2vw;
+    }
+    .card__info__i{
+        width: 40vw;
+        position: relative;
+        margin-top: -63.4vw;
+        left: 21vw;
+    }
+    .wrapper-food{
+        overflow-x: auto;
+        width: 95vw;
+    }
+    .card-food{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        background: rgba(149, 121, 229, 0.31);
+        border-radius: 65px;
+
+        padding: 3.6vw 4.13vw 3.6vw 4.13vw;
+        margin-right: 2.2vw;
+    }
+    .title_food{
+        font-size: 2vw;
+    }
+    .info_food{
+        font-size: 1.7vw;
+        width: 40vw;
+        height: 10vh
+    }
+    .food_bt{
+        width: 27.56vw;
+    }
+    .contacts_about{
+        font-size: 2.25vw;
+        width: 27vw;
+    }
+    .contacts_info{
+        font-size: 2.25vw;
+        width: 59.21vw;
+    }
+}
+
+
+
+@media (max-width: 360px) {
+    a{
+        font-size: 5vw;
+    }
+    h2{
+        font-size: 7vw;
+    }
+    .header__nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 2.3vw;
+        width: 60.83vw;
+    }
+    .header__container-img{
+        width: 15vw;
+    }
+    .header__title{
+        display: none;
+        font-size: 2vw;
+        width: 5vw;
+    }
+    .phone_title{
+        display: none;
+    }
+    .card{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .card__main{
+
+        margin-right: -90vw;
+        z-index: 100;
+
+        height: 50.9vw;
+
+        padding: 3.5vw 6vw 3.66vw 6vw;
+    }
+    .card__main__title{
+        font-size: 5vw;
+    }
+    .card__main__text{
+        font-size: 4.5vw;
+    }
+    .card__main__but{
+        background: #621a33;
+        border-radius: 100px;
+
+        padding: 0.57vw 2.91vw 0.57vw 2.91vw;
+        border: none;
+
+        font-size: 5vw;
+        font-family: Roboto;
+        font-weight: 400;
+
+        cursor: pointer;
+
+    }
+    .card__info{
+        position: relative;
+        margin-left: -95.4vw;
+        margin-top: 6vw;
+        width: 70.02vw;
+        height: 65.88vw;
+
+        border-radius: 60px;
+
+        padding: 2.44vw 7.81vw 4.42vw 4.42vw;
+    }
+    .card__info__text{
+        font-size: 3.5vw;
+    }
+    .card__info__i{
+        width: 45vw;
+        position: relative;
+        margin-top: -61.8vw;
+        left: 50vw;
+    }
+    .wrapper-food{
+        overflow-x: auto;
+        width: 95vw;
+    }
+    .card-food{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        background: rgba(149, 121, 229, 0.31);
+        border-radius: 65px;
+
+        padding: 3.6vw 4.13vw 3.6vw 4.13vw;
+        margin-right: 2.2vw;
+    }
+    .title_food{
+        font-size: 5vw;
+    }
+    .info_food{
+        font-size: 3vw;
+        width: 60vw;
+        height: 10vh
+    }
+    .food_bt{
+        width: 40vw;
+    }
+    .contacts_about{
+        font-size: 4vw;
+        width: 50vw;
+    }
+    .contacts_info{
+        font-size: 3.5vw;
+        width: 59.21vw;
+    }
+
+    .width_img{
+        width: 100%;
+    }
+    h2{
+
+    }
+}
+
