@@ -171,7 +171,7 @@ a{
 .info_food{
     font-size: 0.72vw;
     width: 18vw;
-    height: 10vh
+    height: 10vh;
 }
 .food_bt{
     width: 11.56vw;
@@ -305,7 +305,7 @@ a{
     .info_food{
         font-size: 2vw;
         width: 40vw;
-        height: 10vh
+        height: auto;
     }
     .food_bt{
         width: 27.56vw;
@@ -426,7 +426,7 @@ a{
     .info_food{
         font-size: 3.5vw;
         width: 60vw;
-        height: 10vh
+        height: auto;
     }
     .food_bt{
         width: 40vw;
