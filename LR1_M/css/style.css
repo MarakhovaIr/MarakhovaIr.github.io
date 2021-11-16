@@ -25,7 +25,7 @@ h2{
     font-size: 2.7vw;
 }
 a{
-    font-size: 1.25vw;
+    font-size: 1.35vw;
     text-decoration: none
 }
 .header{
@@ -109,7 +109,14 @@ a{
     cursor: pointer;
 
 }
-
+.card__main__but:hover{
+    background: #b62971;
+    transition: .2s;
+}
+.card__main__but:active{
+    background: rgba(182, 41, 113, 0.6);
+    transition: .2s;
+}
 .card__info{
     position: relative;
     margin-left: -36.4vw;
@@ -180,19 +187,10 @@ a{
     margin-top: 1.2vw;
     padding: 0.83vw 10.15vw 10.15vw 10.15vw;
 }
-.contacts_about:hover{
-    text-decoration:none;
-  color:#551A8B ;  
-}
-.contacts_about:active{
-    text-decoration: none;
-    color: #551A8B
-}
 .contacts_about{
     font-size: 1.25vw;
     text-align: center;
     width: 15vw;
-
 }
 .contacts_info{
     font-size: 1.25vw;
@@ -203,9 +201,6 @@ a{
 .width_img{
     width: 61%;
 }
-
-  
-
 
 
 @media (min-width: 361px) and (max-width: 1024px) {
